@@ -2,6 +2,9 @@
 
 
 
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -200,12 +203,29 @@ body{
     font-family: 'Comfortaa', sans-serif;
     color: rgb(0, 90, 112);
     font-weight: 400;
+    
+
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 header, footer{
     display: flex;
     background-color: rgb(0, 131, 143);
     
+}
+header{
+  background-color: rgba(0, 131, 143, 0);
+  transition: background-color 0.3s;
+  position: absolute;
+  width: 100%;
+
+}
+header:hover{
+  background-color: rgb(0, 131, 143);
+  transition: background-color 0.3s;
 }
 
 .logo{
@@ -260,3 +280,37 @@ header, footer{
   padding-top: 20px;
   margin-left: 75px;
 }
+
+.arrow{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  
+}
+
+@media (max-width: 645px){
+  header {
+      font-size: 10px;
+    }
+  .bla div svg{
+    width: 35px;
+    height: 35px;
+  }
+    }
+
+@media (max-width: 450px){
+  .sometext{
+    padding-left: 39px;
+  }
+  .telnum{
+    margin-left: 0px;
+  }
+
+  }
+
+@media (max-width: 825px){
+  .inner{
+    padding: 0px;
+  }
+}
+
