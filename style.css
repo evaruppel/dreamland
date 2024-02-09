@@ -237,10 +237,26 @@ header, footer{
   font-weight: 700;
   font-size: 50px;
   padding-top: 250px;
-  padding-left: 70px;
+  padding-left: 125px;
 }
 
 .rest{
   font-family: 'Comfortaa', sans-serif;
-  font
+}
+
+.bla{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.telnum{
+  text-align: center;
+  color: #E0F2F1;
+  width: 100%;
+  padding-top: 20px;
+  margin-left: 75px;
 }
