@@ -223,3 +223,24 @@ header, footer{
     align-items: center;
 }
 
+
+.kartinka{
+  height: 617px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sometext{
+  color: #fff;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  padding-top: 250px;
+  padding-left: 70px;
+}
+
+.rest{
+  font-family: 'Comfortaa', sans-serif;
+  font
+}
