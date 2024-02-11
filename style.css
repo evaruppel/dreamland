@@ -287,7 +287,46 @@ header:hover{
   bottom: 10px;
   
 }
+.location{
+  display: flex;
+  margin: 0 auto;
+  height: auto;
+  width: 70vw;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.loc-card{
+  transition: 1s;
+  display: none;
+}
+.loc-card img{
+  width: 70vw;
+}
+.active{
+  display: inline-block ;
+  transition: 1s;
+}
 
+.left{
+  display: flex;
+  padding: 0px 30px 0px 30px;
+  align-items: center;
+  position: relative;
+  left: 30px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 20px;
+}
+.right{
+  display: flex;
+  padding: 0px 30px 0px 30px;
+  align-items: center;
+  position: relative;
+  right: 30px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 20px;
+}
 @media (max-width: 645px){
   header {
       font-size: 10px;
@@ -313,4 +352,5 @@ header:hover{
     padding: 0px;
   }
 }
+
 
