@@ -425,12 +425,6 @@ select::-ms-expand {
   align-items: absolute;
 } */
 
-.down_note {
-    display: flex;
-    justify-content: center;
-
-}
-
 option{
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
