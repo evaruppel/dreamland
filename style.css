@@ -438,3 +438,46 @@ option{
 }  
 select{
   font-size: 20px;}
+
+
+.button-60 {
+  align-items: center;
+  appearance: none;
+  background-color: #E0F2F1;
+  border: 1px solid rgb(0, 90, 112);
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(0, 90, 112);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  height: 2.5em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+
+
+.button-60:hover {
+  background-color: rgb(0, 90, 112);
+  border-color: rgb(0, 90, 112);
+  color:#E0F2F1;
+  transition: 0.5s;
+  scale: 1.5;
+}
+
+.book{
+  background-color: #E0F2F1;
+  color:rgb(0, 90, 112);
+  position: relative;
+}
