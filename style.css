@@ -214,8 +214,13 @@ html{
 header, footer{
     display: flex;
     background-color: rgb(0, 131, 143);
-    
+  }
+
+footer{
+  margin-top: 40px;
+  padding-top: 15px;
 }
+  
 header{
   background-color: rgba(0, 131, 143, 0);
   transition: background-color 0.3s;
@@ -277,15 +282,17 @@ header:hover{
   text-align: center;
   color: #E0F2F1;
   width: 100%;
-  padding-top: 20px;
+  padding-bottom: 5px;
   margin-left: 75px;
+  font-family: 'Comfortaa', sans-serif;
+
 }
 
 .arrow{
   position: fixed;
   right: 10px;
   bottom: 10px;
-  
+  transition: 0.1s;
 }
 
 @media (max-width: 645px){
@@ -333,44 +340,44 @@ header:hover{
 
 .leftbtn{
   position: relative;
-  padding-top: 350px;
+  padding-top: 300px;
   left: 90px;
 
 }
 .rightbtn{
   position: relative;
-  padding-top: 350px;
+  padding-top: 300px;
   right: 90px;
 
 }
 
 
-:root {
+/* :root { */
   /* --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff); */
-  --gray: #E0F2F1;
+  /* --gray: #E0F2F1;
   --darkgray: #E0F2F1;
-}
+} */
 
-select {
+/* select { */
   /* Reset Select */
-  appearance: none;
+  /* appearance: none;
   outline: 10px rgb(44, 152, 179);
   border: 0;
-  box-shadow: none;
+  box-shadow: none; */
   /* Personalize */
-  flex: 1;
+  /* flex: 1;
   padding: 0 1em;
   color: rgb(0, 90, 112);
   background-color: #E0F2F1;
   background-image: none;
   cursor: pointer;
-}
+} */
 /* Remove IE arrow */
-select::-ms-expand {
+/* select::-ms-expand {
   display: none;
-}
+} */
 /* Custom Select wrapper */
-.select {
+/* .select {
   position: relative;
   display: flex;
   width: 20em;
@@ -378,9 +385,9 @@ select::-ms-expand {
   border-radius: .25em;
   overflow: hidden;
 
-}
+} */
 /* Arrow */
-.select::after {
+/* .select::after {
   content: '\25BC';
   position: absolute;
   top: 0;
@@ -390,7 +397,7 @@ select::-ms-expand {
   transition: .25s all ease;
   pointer-events: none; 
    color: #E0F2F1;
-}
+} */
 
 
 /* Other styles*/
@@ -471,7 +478,81 @@ select{
 }
 
 .book{
+  position: absolute;
+  right: 0px;
+  left: auto;
   background-color: #E0F2F1;
   color:rgb(0, 90, 112);
-  position: relative;
+  /* position: relative; */
+  width: 500px;
+  height: 350px;
+  border-radius: 0 0 0 5%;
+  z-index: 2;
+  display: none;
+}
+
+.booktxt{
+  /* position: relative;
+  top: 35px; */
+  margin-top: 35px;
+  padding-bottom: 35px;
+}
+
+button{
+  margin-top: 20px !important;
+
+}
+.containerselect{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.bookdate{
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type='date']{
+  width: 120px;
+}
+
+.blabla{
+  display: flex;
+  justify-content: space-around;
+  font-size: smaller;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+}
+
+.Rooms, .rest, .location_text{
+ margin-top: 45px; 
+ color: rgb(0, 90, 112)
+}
+
+.bookingresult{
+  width: 330px;
+  height: 150px;
+  background-color: #E0F2F1;
+  border-radius: 5%;
+  color: rgb(0, 90, 112);
+  display: none;
+  z-index: 3;
+  top: 0;
+  position: absolute;
+  left: 40%;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.resulttext{
+  margin-top: 25px;
+  font-size: medium;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+}
+
+.resultlogo{
+  padding: 10px 10px;
 }
