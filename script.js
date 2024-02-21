@@ -94,11 +94,11 @@ btn.addEventListener('click', ()=>{
     
     resulttext.innerHTML = `Тип комнаты:  ${roomtype}<br>Дата заезда:  ${checkin}<br>Дата выезда:  ${checkout}`
     bookingresult.style.display = 'flex'
-    bookingresult.style.opacity = 0
+    // bookingresult.style.top
 anime({
     targets: bookingresult,
     duration: 1000,
-    opacity : 1,
+    top : 0,
     easing : 'easeOutBack'
 })
 
@@ -106,7 +106,7 @@ anime({
 anime ({
     targets: bookingresult,
     duration: 1000,
-    opacity : 0,
+    top : -150,
     easing : 'easeOutBack'
 }).finished.then(()=>{bookingresult.style.display = 'none'})
 }, 3000)

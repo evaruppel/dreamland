@@ -535,11 +535,13 @@ input[type='date']{
   color: rgb(0, 90, 112);
   display: none;
   z-index: 3;
-  top: 0;
+  top: -150;
   position: absolute;
   left: 40%;
   transition: 0.5s;
   opacity: 1;
+  display: none;
+  overflow: hidden;
 }
 
 .resulttext{
