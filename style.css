@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
 
-
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -479,8 +475,7 @@ select{
 
 .book{
   position: absolute;
-  right: 0px;
-  left: auto;
+  right: -500px;
   background-color: #E0F2F1;
   color:rgb(0, 90, 112);
   /* position: relative; */
@@ -489,6 +484,7 @@ select{
   border-radius: 0 0 0 5%;
   z-index: 2;
   display: none;
+  overflow : hidden;
 }
 
 .booktxt{

@@ -36,7 +36,6 @@ document.addEventListener('scroll', ()=>{
 })
 
 
-
 // loc.forEach(element => {
 //     element.addEventListener('click', ()=>{
 //         element.classList.remove('active')
@@ -46,15 +45,33 @@ document.addEventListener('scroll', ()=>{
 //     })
 // });
 
+
 let bookbtn = document.querySelector('.text3')
 let book = document.querySelector('.book')
 bookbtn.addEventListener('click', ()=>{
     book.style.display = 'block'
+    // book.style.opacity = '0'
+    anime ({
+        targets : book,
+        delay: 50,
+        right : 0,
+        // opacity : 1,
+        easing: 'easeInBack'
+    }).finished.then(()=>{})
+    
 })
 
 let otmena = document.querySelector('.otmena')
 otmena.addEventListener('click', ()=>{
-    book.style.display = 'none'
+    anime({
+        targets : book,
+        delay: 500,
+        right : -500,
+        easing: 'easeOutBack'
+    }).finished.then(()=>{
+        book.style.display = 'none'
+    })
+
 })
 
 
@@ -65,14 +82,29 @@ btn.addEventListener('click', ()=>{
     let roomtype = document.querySelector('.form-select').value
     let checkin = document.querySelector('#bla1').value
     let checkout = document.querySelector('#bla2').value
+    anime({
+        targets : book,
+        delay: 500,
+        right : -500,
+        easing: 'easeOutBack'
+    }).finished.then(()=>{
+        book.style.display = 'none'
+        // book.style.right = '0'
+    })
+    
     resulttext.innerHTML = `Тип комнаты:  ${roomtype}<br>Дата заезда:  ${checkin}<br>Дата выезда:  ${checkout}`
     bookingresult.style.display = 'flex'
     bookingresult.style.opacity = 1
     setTimeout(()=>{
-        bookingresult.style.opacity = 0
-        bookingresult.style.display = 'none'
+anime ({
+    targets: bookingresult,
+    delay: 200,
+    opacity : 0,
+    easing : 'linear'
+}).finished.then(()=>{bookingresult.style.display = 'none'})
 }, 3000)
 })
+
 
 
 
