@@ -53,7 +53,7 @@ bookbtn.addEventListener('click', ()=>{
     // book.style.opacity = '0'
     anime ({
         targets : book,
-        delay: 50,
+        duration: 500,
         right : 0,
         // opacity : 1,
         easing: 'easeInBack'
@@ -65,7 +65,7 @@ let otmena = document.querySelector('.otmena')
 otmena.addEventListener('click', ()=>{
     anime({
         targets : book,
-        delay: 500,
+        duration: 500,
         right : -500,
         easing: 'easeOutBack'
     }).finished.then(()=>{
@@ -84,7 +84,7 @@ btn.addEventListener('click', ()=>{
     let checkout = document.querySelector('#bla2').value
     anime({
         targets : book,
-        delay: 500,
+        duration: 500,
         right : -500,
         easing: 'easeOutBack'
     }).finished.then(()=>{
@@ -94,13 +94,20 @@ btn.addEventListener('click', ()=>{
     
     resulttext.innerHTML = `Тип комнаты:  ${roomtype}<br>Дата заезда:  ${checkin}<br>Дата выезда:  ${checkout}`
     bookingresult.style.display = 'flex'
-    bookingresult.style.opacity = 1
+    bookingresult.style.opacity = 0
+anime({
+    targets: bookingresult,
+    duration: 1000,
+    opacity : 1,
+    easing : 'easeOutBack'
+})
+
     setTimeout(()=>{
 anime ({
     targets: bookingresult,
-    delay: 200,
+    duration: 1000,
     opacity : 0,
-    easing : 'linear'
+    easing : 'easeOutBack'
 }).finished.then(()=>{bookingresult.style.display = 'none'})
 }, 3000)
 })
