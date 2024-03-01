@@ -194,6 +194,8 @@
     }
   }
 
+
+
 body{
     background-color: #E0F2F1;
     font-family: 'Comfortaa', sans-serif;
@@ -261,6 +263,7 @@ header:hover{
 
 .rest{
   font-family: 'Comfortaa', sans-serif;
+  margin-bottom: 20px;
 }
 
 .bla{
@@ -346,71 +349,6 @@ header:hover{
 
 }
 
-
-/* :root { */
-  /* --background-gradient: linear-gradient(178deg, #ffff33 10%, #3333ff); */
-  /* --gray: #E0F2F1;
-  --darkgray: #E0F2F1;
-} */
-
-/* select { */
-  /* Reset Select */
-  /* appearance: none;
-  outline: 10px rgb(44, 152, 179);
-  border: 0;
-  box-shadow: none; */
-  /* Personalize */
-  /* flex: 1;
-  padding: 0 1em;
-  color: rgb(0, 90, 112);
-  background-color: #E0F2F1;
-  background-image: none;
-  cursor: pointer;
-} */
-/* Remove IE arrow */
-/* select::-ms-expand {
-  display: none;
-} */
-/* Custom Select wrapper */
-/* .select {
-  position: relative;
-  display: flex;
-  width: 20em;
-  height: 3em;
-  border-radius: .25em;
-  overflow: hidden;
-
-} */
-/* Arrow */
-/* .select::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1em;
-  background-color: rgb(0, 90, 112);
-  transition: .25s all ease;
-  pointer-events: none; 
-   color: #E0F2F1;
-} */
-
-
-/* Other styles*/
-/* body {
-  color: #fff;
-  background: var(--background-gradient);
-} */
-
-/* a {
-  font-weight: bold;
-  color: rgb(0, 90, 112);
-  text-decoration: drop-shadow;
-  padding: .25em;
-  border-radius: .50em;
-  background: pink;
-} */
-
-/* 가운데정렬 - position,transform*/
 .containerselect {
   position : absolute;
   top: 50%;
@@ -418,14 +356,6 @@ header:hover{
   transform :
   translate(-50%,-50%); 
 }
-
-/* 가운데정렬 - flexbox*/
-/* 근데 이건 1행 정렬이된다. */
-/* .container {
-  display: flex;
-  justify-content: center;
-  align-items: absolute;
-} */
 
 option{
   font-family: 'Comfortaa', sans-serif;
@@ -530,7 +460,7 @@ input[type='date']{
   width: 330px;
   height: 150px;
   background-color: #E0F2F1;
-  border-radius: 5%;
+  border-radius: 8px;
   color: rgb(0, 90, 112);
   display: none;
   z-index: 3;
@@ -555,36 +485,6 @@ input[type='date']{
 }
 
 
-/* .reviews{
-  /* width: 70vw;
-  height: 40vw; */
-  /* display: flex;
-  justify-content: space-evenly;
-} */ 
-/* 
-.car{
-  background-color: #E0F2F1;
-  color: rgb(0, 90, 112);
-  border-radius: 5px;
-  width: 220px;
-  height: 120px;
-  font-size: 10px;
-  text-align: left;
-  font-family: 'Comfortaa', sans-serif;
-  font-size: 10px;
-  padding-left: 5px;
-  z-index: 2;
-  position: relative;
-  top: -150px;
-}
-
-.username{
-  font-size: 20px;
-}
-
-.otziv{
-  font-size: 15px;
-} */
 
 @keyframes bla{
   0%{
@@ -619,3 +519,106 @@ input[type='date']{
   width: 100vw;
   height: 100vh;
 }
+
+.service_cont{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.service{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  width: 30%;
+  height: 100%;
+  min-width: 450px;
+  text-align: center;
+  
+}
+
+.melkiy_shrift{
+  font-size: xx-small;
+  color: #74c5c1;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.ne_melkiy_text{
+  font-family: 'Comfortaa', sans-serif;
+}
+
+
+@media(max-width: 700px){
+  .service_cont{
+    flex-wrap: wrap;
+  }
+}
+
+.otziv_cont{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.otziv_card_cont{
+  background-color: #fff;
+  max-width: 1330px;
+  /* height: 10vh; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.otziv_img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.otziv{
+  background-color: #E0F2F1;
+}
+
+.history{
+  width: 450px;
+  background-color: #E0F2F1;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.otziv_card_tail{
+  background-color: #fff;
+  width: 0;
+  height: 0;
+  margin-left: 35px;
+  border: 12px solid;
+  border-color: #E0F2F1 transparent transparent #E0F2F1;
+}
+
+.otziv_name{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 5px;
+}
+
+.otziv_cont p{
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.left_otziv{
+  margin-top: 20px;
+}
+
